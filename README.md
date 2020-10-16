@@ -31,6 +31,7 @@ OPTIONS /todoitem/123: show the supported verbs regarding endpoint /todoitem/123
 GET /todoitem?filter[action]=xx&filter[done]=true display all todos with action xx that was finished
 
 NOTICE: actions in the controller were not pluarized !!
+
 in config (web.php) :
         'urlManager' => [
             'enablePrettyUrl' => true,
