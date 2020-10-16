@@ -20,15 +20,25 @@ CREATE UNIQUE INDEX todoitem_id_idx ON public.todoitem USING btree (id);
 THE USAGE:
 
 GET /todoitem: list all todos page by page;
+
 HEAD /todoitem: show the overview information of todoitem listing;
+
 POST /todoitem: create a new todoitem;
+
 GET /todoitem/123: return the details of the todoitem 123;
+
 HEAD /todoitem/123: show the overview information of todoitem 123;
+
 PATCH /todoitem/123 and PUT /todoitem/123: update the todoitem 123;
+
 DELETE /todoitem/123: delete the todoitem 123;
+
 OPTIONS /todoitem: show the supported verbs regarding endpoint /todoitem;
+
 OPTIONS /todoitem/123: show the supported verbs regarding endpoint /todoitem/123
+
 GET /todoitem?filter[action]=xx&filter[done]=true display all todos with action xx that was finished
+
 
 NOTICE: actions in the controller were not pluarized !!
 
